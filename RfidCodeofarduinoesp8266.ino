@@ -103,7 +103,5 @@ void loop() {
 
     Serial.printf("Gas Leak: %s\n", Firebase.RTDB.setDouble(&fbdo, F("/Responce"), num) ? "ok" : fbdo.errorReason().c_str());
 
-    // Reading temperature or humidity takes about 250 milliseconds!
-    // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
   }
 }
